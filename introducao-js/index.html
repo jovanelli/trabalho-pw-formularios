@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .negrito {
+            font-weight: bold;
+        }
+        .vermelho {
+            color: red;
+        }
+        .caixa-alta {
+            text-transform: uppercase;
+        }
+    </style>
+
+    <input type="text" name="usuario" id="loginUsuario" placeholder="Usuário">
+    <input type="text" name="senha" id="loginSenha" placeholder="Senha">
+
+    <button onclick="exibir()">Entrar</button>
+
+    <p>
+        Leia o 
+        <span class="negrito caixa-alta vermelho">contrato</span> 
+        abaixo e depois 
+        <span class="negrito caixa-alta vermelho">assine</span> 
+        e envie por 
+        <span class="negrito caixa-alta vermelho">e-mail</span>
+        .
+    </p>
+
+    <span id="exibirDadosLogin"></span>
+
+    <script>
+        function exibir(){
+            console.log("oi, cheguei")
+            alert(você está com vírus)
+
+        }
+    </script>
+
+</body>
+</html>
