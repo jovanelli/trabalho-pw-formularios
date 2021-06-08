@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em contato! :)</title>
+</head>
+<body>
+    <form action="" method="GET" onsubmit="onClickEntrar(event)">
+
+        <input 
+            type="name" 
+            name="nome" 
+            id="form-e-js-nome" 
+            placeholder="Seu Nome"><br>
+
+        <input 
+            type="email" 
+            name="contato" 
+            id="form-e-js-email" 
+            placeholder="Seu e-mail"><br>
+
+        <input 
+            type="text" 
+            name="mensagem" 
+            id="form-e-js-texto" 
+            placeholder="Coloque aqui sua mensagem! :)"><br>
+
+        <input 
+            type="submit" 
+            value="Enviar" 
+            id="form-e-js-entrar">
+
+    </form>
+
+    <div id="form-e-js-resultado"></div>
+
+    <script>
+        function onClickEntrar(event) {
+            event.preventDefault();
+
+            let tagNome = document.getElementById("form-e-js-nome")
+            let tagEmail = document.getElementById("form-e-js-email")
+            let tagMensagem = document.getElementById("form-e-js-texto")
+            let resultado = +
+                "Sua mensagem foi a seguinte:" +
+                "Nome: " + tagNome.value  +
+                "E-mail: " + tagEmail.value  +
+                "Mensagem: " + tagMensagem.value;
+
+            tagResultado.innerHTML = resultado;
+        }
+    </script>
+
+</body>
+</html>

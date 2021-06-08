@@ -20,7 +20,7 @@
         }
     </style>
 
-    <input type="text" name="usuario" id="loginUsuario" placeholder="Usuário">
+    <input type="text" name="usuario" id="loginUsuario" placeholder="Usuário" onkeyup="validarDigitacao(this)">
     <input type="text" name="senha" id="loginSenha" placeholder="Senha">
 
     <button onclick="exibir()">Entrar</button>
@@ -39,8 +39,14 @@
 
     <script>
         function exibir(){
-            console.log("oi, cheguei")
+            console.log("oi, cheguei");
             alert("você está com vírus")
+
+        }
+        function validarDigitacao(event) {
+            console.log(event.value);
+            let tagSpan = document.getElementById("exibirDadosLogin");
+            tagSpan.innerHTML = event.value
 
         }
     </script>
